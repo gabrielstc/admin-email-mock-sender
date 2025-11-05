@@ -5,6 +5,13 @@
   "title": "Corebiz Email Mock Sender",
   "description": "Admin interface for sending standard VTEX emails with mocked data",
   "mustUpdateAt": "2025-11-28",
+  "billingOptions": {
+    "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
+    "support": {
+      "url": "https://github.com/gabrielstc/admin-email-mock-sender"
+    },
+    "free": true
+  },
   "scripts": {
     "postreleasy": "vtex publish"
   },
