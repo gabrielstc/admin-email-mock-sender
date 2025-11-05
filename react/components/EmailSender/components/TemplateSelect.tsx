@@ -107,9 +107,9 @@ export const TemplateSelect: React.FC<TemplateSelectProps> = ({
                         onFocus={(e) => e.target.style.borderColor = '#0c389f'}
                         onBlur={(e) => e.target.style.borderColor = '#e3e4e6'}
                     />
-                    <div style={{ 
-                        marginTop: '4px', 
-                        fontSize: '12px', 
+                    <div style={{
+                        marginTop: '4px',
+                        fontSize: '12px',
                         color: '#666',
                         fontStyle: 'italic'
                     }}>

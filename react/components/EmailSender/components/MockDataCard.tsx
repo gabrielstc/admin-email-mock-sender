@@ -38,7 +38,7 @@ export const MockDataCard: React.FC<MockDataCardProps> = ({
                 <SectionHeader
                     icon="📊"
                     title={<FormattedMessage {...messages.mockData} />}
-                    subtitle={selectedTemplate === 'custom' 
+                    subtitle={selectedTemplate === 'custom'
                         ? "📝 Para templates customizados, edite o JSON com os dados necessários para seu template"
                         : "Dados gerados automaticamente para teste"
                     }
@@ -53,8 +53,8 @@ export const MockDataCard: React.FC<MockDataCardProps> = ({
                         borderRadius: '8px',
                         border: '1px solid #ffb74d'
                     }}>
-                        <div style={{ 
-                            fontSize: '14px', 
+                        <div style={{
+                            fontSize: '14px',
                             color: '#e65100',
                             fontWeight: '500',
                             marginBottom: '8px'
@@ -62,7 +62,7 @@ export const MockDataCard: React.FC<MockDataCardProps> = ({
                             🛠️ Template Customizado
                         </div>
                         <div style={{ fontSize: '13px', color: '#bf360c' }}>
-                            Para templates customizados, você deve editar o JSON abaixo com os dados específicos que seu template espera. 
+                            Para templates customizados, você deve editar o JSON abaixo com os dados específicos que seu template espera.
                             Os dados iniciais são genéricos - personalize conforme necessário.
                         </div>
                     </div>
