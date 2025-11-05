@@ -1,7 +1,7 @@
 {
   "name": "admin-email-mock-sender",
   "vendor": "corebiz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Corebiz Email Mock Sender",
   "description": "Admin interface for sending standard VTEX emails with mocked data",
   "mustUpdateAt": "2025-11-28",
