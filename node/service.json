@@ -5,10 +5,6 @@
     "minReplicas": 2,
     "maxReplicas": 4,
     "routes": {
-        "healthCheck": {
-            "path": "/_v/health",
-            "public": true
-        },
         "sendEmail": {
             "path": "/_v/email/send",
             "public": true

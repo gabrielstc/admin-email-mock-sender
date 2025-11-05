@@ -12,7 +12,6 @@ import {
 import { json } from 'co-body'
 
 import { Clients } from './clients'
-import { health } from './middlewares/health'
 
 const TIMEOUT_MS = 10000
 
@@ -52,9 +51,6 @@ console.log('Registering VTEX service routes...')
 export default new Service<Clients, State, CustomContext>({
     clients,
     routes: {
-        healthCheck: method({
-            GET: [health],
-        }),
 
         // Envio de e-mail
         sendEmail: method({
