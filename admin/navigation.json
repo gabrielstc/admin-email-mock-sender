@@ -1,0 +1,18 @@
+[
+  {
+    "section": "apps",
+    "titleId": "admin/admin-example.navigation.label-group",
+    "subSection": "Email Mock Sender",
+    "adminVersion": 4,
+    "subSectionItems": [
+      {
+        "labelId": "admin/admin-example.navigation.label-main",
+        "path": "/admin/example"
+      },
+      {
+        "labelId": "admin/admin-example.navigation.label-emails",
+        "path": "/admin/email-sender"
+      }
+    ]
+  }
+]

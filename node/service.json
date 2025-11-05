@@ -1,0 +1,37 @@
+{
+    "memory": 256,
+    "ttl": 10,
+    "timeout": 10,
+    "minReplicas": 2,
+    "maxReplicas": 4,
+    "routes": {
+        "healthCheck": {
+            "path": "/_v/health",
+            "public": true
+        },
+        "sendEmail": {
+            "path": "/_v/email/send",
+            "public": true
+        },
+        "previewTemplate": {
+            "path": "/_v/email/preview",
+            "public": true
+        },
+        "getEmailHistory": {
+            "path": "/_v/email/history",
+            "public": true
+        },
+        "searchEmailHistory": {
+            "path": "/_v/email/history/search",
+            "public": true
+        },
+        "getProviders": {
+            "path": "/_v/email/providers",
+            "public": true
+        },
+        "getEmailTemplates": {
+            "path": "/_v/email-templates",
+            "public": true
+        }
+    }
+}

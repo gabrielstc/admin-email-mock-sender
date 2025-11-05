@@ -1,0 +1,73 @@
+{
+  "name": "admin-email-mock-sender",
+  "vendor": "corebiz",
+  "version": "0.0.0",
+  "title": "Corebiz Email Mock Sender",
+  "description": "Admin interface for sending standard VTEX emails with mocked data",
+  "mustUpdateAt": "2025-11-28",
+  "scripts": {
+    "postreleasy": "vtex publish"
+  },
+  "dependencies": {},
+  "builders": {
+    "react": "3.x",
+    "admin": "0.x",
+    "messages": "1.x",
+    "node": "7.x"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/mail-service/pvt/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.myvtex.com",
+        "path": "/api/mail-service/pvt/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.myvtex.com",
+        "path": "/api/template-render/pvt/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/mail-service/pub/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.myvtex.com",
+        "path": "/api/mail-service/pub/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/dataentities/*"
+      }
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "POWER_USER_DS"
+    },
+    {
+      "name": "ADMIN_DS"
+    }
+  ],
+  "credentialType": "absolute",
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

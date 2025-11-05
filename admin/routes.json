@@ -1,0 +1,14 @@
+{
+  "admin.app.example": {
+    "component": "AdminExample",
+    "path": "/admin/app/example"
+  },
+  "admin.app.example-detail": {
+    "component": "AdminExampleDetail",
+    "path": "/admin/app/example/:id"
+  },
+  "admin.app.email-sender": {
+    "component": "EmailSender",
+    "path": "/admin/app/email-sender"
+  }
+}
